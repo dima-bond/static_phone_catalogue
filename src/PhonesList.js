@@ -8,7 +8,7 @@ export const PhonesList = ({ phonesList }) => {
       {phonesList.map(phone => (
         <li key={phone.id} className="thumbnail">
         <Link to={`/static_phone_catalogue/phones/${phone.id}`} className="thumb">
-          <img alt={phone.name} src={`static_phone_catalogue/${phone.imageUrl}`} />
+          <img alt={phone.name} src={phone.imageUrl} />
         </Link>
 
         <div className="phones__btn-buy-wrapper">
